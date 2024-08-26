@@ -19,7 +19,7 @@
 #include "table_music.h"
 /* Private defines ---------------------------------------------------- */
 #define BUZZER_AUTORELOAD (1000)
-#define BUZZER_PRESCALE   (100)
+#define BUZZER_PRESCALE   (50)
 /* Private enumerate/structure ---------------------------------------- */
 /* Private macros ----------------------------------------------------- */
 /* Public variables --------------------------------------------------- */

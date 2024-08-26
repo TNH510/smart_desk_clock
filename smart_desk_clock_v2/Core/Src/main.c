@@ -19,6 +19,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "drv_buzzer.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -106,7 +107,8 @@ int main(void)
   MX_TIM9_Init();
   MX_TIM11_Init();
   /* USER CODE BEGIN 2 */
-
+  drv_buzzer_init();
+  drv_buzzer_music(NOKIA_TUNE);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -114,7 +116,20 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
+    bsp_gpio_set_pin(R_GPIO_Port, R_Pin);
+    HAL_Delay(200);
+    bsp_gpio_reset_pin(R_GPIO_Port, R_Pin);
+    HAL_Delay(200);
 
+    bsp_gpio_set_pin(G_GPIO_Port, G_Pin);
+    HAL_Delay(200);
+    bsp_gpio_reset_pin(G_GPIO_Port, G_Pin);
+    HAL_Delay(200);
+
+    bsp_gpio_set_pin(B_GPIO_Port, B_Pin);
+    HAL_Delay(200);
+    bsp_gpio_reset_pin(B_GPIO_Port, B_Pin);
+    HAL_Delay(200);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

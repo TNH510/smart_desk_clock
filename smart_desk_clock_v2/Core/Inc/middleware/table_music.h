@@ -117,7 +117,7 @@
 /* Public variables --------------------------------------------------- */
 // change tempo to make the song slower or faster
 const int tempo1 = 140;
-const int tempo2 = 180;
+const int tempo2 = 150;
 const int tempo3 = 140;
 const int tempo4 = 200;
 // notes of the moledy followed by the duration.
@@ -131,9 +131,20 @@ int melody1[] = {
     NOTE_D4, -4, NOTE_AS4, 4,  NOTE_AS4, 8,  NOTE_A4, -4, NOTE_F4, -4, NOTE_G4, -4, NOTE_F4, -2,
 };
 int melody2[] = {
+    // G E C E E    F E C C A   A G E F E   D D
+    NOTE_G5, 4, NOTE_E5, 4, NOTE_C5, 4, NOTE_E5, 4, 
+    NOTE_E5, 8, NOTE_F5, 8, NOTE_E5, 8, NOTE_D5, 8, NOTE_C5, 8, REST,    8,  REST,    8, NOTE_C5, 8, 
+    NOTE_A5, 4, NOTE_A5, 4, NOTE_G5, 4, NOTE_E5, 4, 
+    NOTE_F5, 8, NOTE_E5, 8, NOTE_D5, 4, NOTE_D5, 4, REST,    4,
 
-    NOTE_E5, 8,       NOTE_D5, 8,       NOTE_FS4, 4,       NOTE_GS4, 4,        NOTE_CS5, 8,       NOTE_B4, 8,       NOTE_D4,
-    4,       NOTE_E4, 4,       NOTE_B4, 8,        NOTE_A4, 8,        NOTE_CS4, 4,        NOTE_E4, 4,       NOTE_A4, 2,
+    NOTE_G5, 4, NOTE_E5, 4, NOTE_C5, 4, NOTE_E5, 4, 
+    NOTE_E5, 8, NOTE_F5, 8, NOTE_E5, 8, NOTE_D5, 8, NOTE_C5, 8, REST,    8,  REST,    4,
+    NOTE_A4, 4, NOTE_C5, 4, NOTE_G4, 4, NOTE_C5, 4, 
+    NOTE_B4, 8, NOTE_C5, 8, NOTE_B4, 8, NOTE_D5, 8, NOTE_C5, 8, REST,    8,  REST,    4,
+
+    NOTE_A4, 4, NOTE_C5, 4, NOTE_G4, 4, NOTE_C5, 4, 
+    NOTE_A4, 4, NOTE_B4, 4, NOTE_C5, 4, REST,    4,
+
 };
 int melody3[] = {
 
